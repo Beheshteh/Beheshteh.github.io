@@ -5,6 +5,8 @@
   <title>weather channel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">    
     <link rel="stylesheet" type="text/css" href="style.css"> 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
@@ -33,22 +35,20 @@
     </div><!-- /.container-fluid -->
   </nav>
   
-  <div class="container">
+  
+  <section class="container">
     <br>
       <div class="leftpane">
+        
+        <h4>Latitude vs. Wind speed</h4>
         <br>
-        <h4>Summary: Latitude vs. X</h4>
-        <img class="summary_image" alt="temp_lat" src="output_temp_lat.png" align="left" >
-        <br>
+        <img alt="wind speed" src="output_wind_lat.png" align="center" >
         <p>
-          The porpose of this project was to analize how the weather changes as you get closer to the equater.
-          to accomplish this analysis, first I pulled data from the openweathermap API to assemble a dataset of 
-          500 random cities across the world. 
-          After assebling the dataset, I used Matplotlib to plot various aspects of the weather vs. latitude.
-          factors we looked at includeed: temperature, cloudiness, wind speed, and humidity. 
-          This site provides the source data and viualizations created as part of the analysis, as well as 
-          explanations and descriptions of any trends and correlations witnesses.
+            Wind is created when air moves from areas of high pressure toward areas 
+            where the air pressure is low. Seasonal temperature changes and the Earth’s
+            rotation also affect wind speed and direction. 
         </p>
+    
       </div>
       <br>
       <div class="rightpane"><br><h4>Vitualization</h4>
@@ -56,9 +56,10 @@
            <img class="vitual_image" alt="temperature" src="output_temp_lat.png" >
            <img class="vitual_image" alt="humidity" src="output_humidity_lat.png" >
            
-           <img class="vitual_image" alt="wind_speed" src="output_wind_lat.png" >
+           <img class="vitual_image1" alt="wind_speed" src="output_wind_lat.png" >
            <img class="vitual_image" alt="cloudiness" src="output_cloud_lat.png" >
       </div>
-    </div>   
+  </section>
+
 </body>
 </html>
